@@ -1,0 +1,101 @@
+<html>
+<head>
+	<style>
+		.bgkeyboard {
+			background-color: #696969;
+			margin: 20px 200px 20px 200px;
+			padding: 30px;
+			width: 800px;
+		}
+		
+		.letter {
+			border-radius: 5px;
+			display: inline-block;
+			border: solid 2px #303030;
+			background-color: #A9A9A9;
+			color: #E0E0E0;
+			padding: 22px;
+			margin: 2px;
+
+		}
+		.letter:hover{
+			background-color: black;
+			color: white;
+		}
+		
+		#type {
+			width: 1200px;
+			padding: 20px;
+			border: 2px solid gray;
+			margin: 50px;
+		}
+		
+	</style>
+</head>
+
+<body>
+<script src='js/index.js'></script>
+<script src='build/main.bundle.js'></script>
+	<div id="type">
+	
+	</div>
+	
+	<div class="bgkeyboard">
+		<div>
+			<div class="letter" onclick='letter(this.innerHTML)'>1</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>2</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>3</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>4</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>5</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>6</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>7</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>8</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>9</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>0</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>.</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>,</div>
+		
+		</div>
+		<div>
+			<div class="letter" onclick='letter(this.innerHTML)'>Q</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>W</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>E</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>R</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>T</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>Y</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>U</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>I</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>O</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>P</div>
+			<div class="letter" onclick='del()'> del </div>
+		</div>
+		<div>
+			<div class="letter" onclick='letter(this.innerHTML)'>A</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>S</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>D</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>F</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>G</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>H</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>J</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>K</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>L</div>
+			<div class="letter" onclick='letter(this.innerHTML)'> / </div>
+			<div class="letter" onclick='empty()'> clear </div>
+		</div>
+		<div>
+			<div class="letter" onclick='letter(this.innerHTML)'>Z</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>X</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>C</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>V</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>B</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>N</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>M</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>-</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>=</div>
+			<div class="letter" onclick='letter(this.innerHTML)'>;</div>
+			<div class="letter" onclick='space(this.innerHTML)'>spacebar</div>
+		</div>
+	</div>
+
+</body>
+</html>
